@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
 }
 
 body {
     background-color: rgb(241, 227, 99);
+    font-size: 20px;
 }
 
 section {
@@ -14,12 +18,21 @@ section {
     border-radius: 50px;
 }
 
-header h1 {
+header {
+    padding: 10px;
     background-color: rgb(226, 219, 219);
     text-align: center;
-    font-size: 60px;
-    padding: 10px;
     border-radius: 50px 50px 0px 0px;
+}
+
+header h1 {
+    font-size: 80px;
+}
+
+.conteiner-ingredientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
 }
 
 .ingredientes-foto {
@@ -33,23 +46,77 @@ header h1 {
 
 .imagem {
     width: 30%;
+    overflow: hidden;
 }
 
-.imagem img{
+.imagem img {
     width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+
+}
+
+.imagem img:hover {
+    transform: rotate(10deg) scale(1.2);
+}
+
+.conteiner-modo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteiner-modo ol {
+    width: 800px;
+    padding: 30px 0px;
+}
+
+.conteiner-modo ol li {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     padding: 20px 0px;
+    background-color: #f2f2f2;
+    width: 100%;
 }
 
-footer{
+/* RODAPÉ */
+footer {
     text-align: center;
 }
 
-footer a{
+footer a {
     font-style: italic;
     text-decoration: none;
+}
+
+footer a:link {
+    color: rgb(170, 155, 19);
+    ;
+}
+
+footer a:hover {
+    color: red;
+    font-size: 30px;
+}
+
+footer a:visited {
+    color: brown;
+}
+
+footer a:active {
+    color: violet;
+}
+
+
+@media (max-width: 700px) {
+    body{
+        background-color: black;
+    }    
 }
