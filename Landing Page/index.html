@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\top3.css">
     <link rel="stylesheet" href="css\grid-fotos.css">
+    <link rel="stylesheet" href="css\formulario.css">
     <title>Document</title>
 </head>
 
@@ -142,6 +143,53 @@
             </div>
         </div>
     </section>
+
+    <section id="formulario" class="sessao bg-principal">
+        <div class="formulario-content">
+            <div class="formulario-cabecalho">
+                <h2>
+                    Título
+                </h2>
+                <p>
+                    sub título
+                </p>
+            </div>
+
+            <div class="formulario-conteudo">
+                <fieldset>
+                    <label>Para contato</label>
+
+                    <div class="formulario-elementos">
+                        <label for="primeiro-nome">Nome</label>
+                        <input type="text" name="primeiro-nome" placeholder="Primeiro nome">
+                    </div>
+                    <div class="formulario-elementos">
+                        <label for="ultimo-nome">Sobrenome</label>
+                        <input type="text" name="ultimo-nome" placeholder="Sobrenome">
+                    </div>
+                    <div class="formulario-elementos">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="formulario-elementos">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
+                    </div>
+                    <div class="formulario-elementos">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape" class="footer">
+        <p>
+            Feito por Diego da Ctrl+Play
+        </p>
+    </footer>
 </body>
 
 </html>
