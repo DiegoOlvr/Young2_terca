@@ -95,6 +95,7 @@ p {
 }
 
 img {
+    margin-left: var(--gap);
     height: 40rem;
     width: 40rem;
     background-color: gray;
