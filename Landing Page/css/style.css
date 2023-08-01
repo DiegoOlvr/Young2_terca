@@ -17,6 +17,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -98,7 +99,6 @@ img {
     margin-left: var(--gap);
     height: 40rem;
     width: 40rem;
-    background-color: gray;
 }
 
 /* Sessão secundária */
