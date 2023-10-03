@@ -39,3 +39,25 @@ main label {
     font-weight: bold;
     font-size: 20px;
 }
+
+button {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    background-color: rgb(96, 63, 103);
+    color:white;
+}
+
+input {
+    width: 80%;
+}
+
+input::placeholder {
+    padding-left: 5px;
+}
+
+label {
+    width: 20%;
+}

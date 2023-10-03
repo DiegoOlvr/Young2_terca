@@ -2,29 +2,32 @@ const NOME_TXT = document.getElementById("nome")
 const MEDIA_TXT = document.getElementById("media")
 const RESULTADO_TXT = document.getElementById("resultado")
 
-NOME_TXT.innerHTML = prompt('Digite o nome do aluno!!!')
-
-n1 = parseInt(prompt('Digite a 1ª nota!'))
-n2 = parseInt(prompt('Digite a 2ª nota!'))
-n3 = parseInt(prompt('Digite a 3ª nota!'))
-
-let soma = n1 + n2 + n3
-let media = soma / 3
-
-if (media >= 7)
-{
-    RESULTADO_TXT.innerHTML = 'Aprovado'
+function calcular_media() {
+    n1 = parseInt(localStorage.getItem("n1"))
+    n2 = parseInt(localStorage.getItem("n2"))
+    n3 = parseInt(localStorage.getItem("n3"))
+    
+    let soma = n1 + n2 + n3
+    let media = soma / 3
+    
+    if (media >= 7)
+    {
+        RESULTADO_TXT.innerHTML = 'Aprovado'
+    }
+    else if (media <= 4)
+    {
+        RESULTADO_TXT.innerHTML = 'Reprovado'
+    }
+    else
+    {
+        RESULTADO_TXT.innerHTML = 'Recuperação'
+    }
+    
+    MEDIA_TXT.innerHTML = media
 }
-else if (media <= 4)
-{
-    RESULTADO_TXT.innerHTML = 'Reprovado'
-}
-else
-{
-    RESULTADO_TXT.innerHTML = 'Recuperação'
-}
 
-MEDIA_TXT.innerHTML = media
+// console.log(localStorage.getItem("nome"))
+
 
 
 /**
