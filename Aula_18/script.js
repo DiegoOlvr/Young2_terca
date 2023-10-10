@@ -3,6 +3,7 @@ const MEDIA_TXT = document.getElementById("media")
 const RESULTADO_TXT = document.getElementById("resultado")
 
 function calcular_media() {
+
     n1 = parseInt(localStorage.getItem("n1"))
     n2 = parseInt(localStorage.getItem("n2"))
     n3 = parseInt(localStorage.getItem("n3"))
@@ -26,6 +27,13 @@ function calcular_media() {
     MEDIA_TXT.innerHTML = media
 }
 
+function nome() {
+    aluno = localStorage.getItem("nome")
+    NOME_TXT.innerHTML = aluno
+}
+
+nome()
+calcular_media()
 // console.log(localStorage.getItem("nome"))
 
 
