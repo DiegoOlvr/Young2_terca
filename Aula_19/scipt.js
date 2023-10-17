@@ -15,7 +15,92 @@ const caracteres_especiais = '!@#$%¨&*()_+=-?/,.;<>:`|ç'
 
 function gerar_senha() {
     let tamanho_senha = tamanho_elemento.value
-    console.log(tamanho_senha)
+    
+    if (!tamanho_senha || tamanho_senha < 6) {
+        tamanho_senha = 6
+    }
+    else if (tamanho_senha > 18) {
+        tamanho_senha = 18
+    }
+
+    let senha = ""
+
+    // if (maiusculas_elemento.checked) {
+    //     senha += sortear_maiusculas()
+    // }
+    // if (minusculas_elemento.checked) {
+    //     senha += sortear_minusculas()
+    // }
+    // if (numeros_elemento.checked) {
+    //     senha += sortear_numeros()
+    // }
+    // if (caracteres_elemento.checked) {
+    //     senha += sortear_caracter()
+    // }
+    for (let i = senha.length; i < tamanho_senha; i++){
+        const x = misturar_senha()
+        senha += x
+    }
+
+    senha_elemento.innerText = senha
+
 }
 
-gerar_senha()
+function sortear_maiusculas() {
+    let sorteado = maiusculas[Math.floor(Math.random() * maiusculas.length)]
+    return sorteado
+}
+
+function sortear_minusculas() {
+    let sorteado = minusculas[Math.floor(Math.random() * minusculas.length)]
+    return sorteado
+}
+
+function sortear_numeros() {
+    let sorteado = numeros[Math.floor(Math.random() * numeros.length)]
+    return sorteado
+}
+
+function sortear_caracter() {
+    let sorteado = caracteres_especiais[Math.floor(Math.random() * caracteres_especiais.length)]
+    return sorteado
+    
+}
+
+function misturar_senha() {
+    const lista = []
+    if (maiusculas_elemento.checked) {
+        lista.push(sortear_maiusculas())
+    }
+    if (minusculas_elemento.checked) {
+        lista.push(sortear_minusculas())
+    }
+    if (numeros_elemento.checked) {
+        lista.push(sortear_numeros())
+    }
+    if (caracteres_elemento.checked) {
+        lista.push(sortear_caracter())
+    }
+    if (lista.length === 0) {
+        return ''
+    }
+    return lista[Math.floor(Math.random() * lista.length)]
+}
+
+gerar_senha_elemento.addEventListener('click', gerar_senha)
+
+copiar_elemento.addEventListener('click', () => {
+    const area_texto = document.createElement('textarea')
+    const pw = senha_elemento.innerText
+
+    if (!pw) {
+        return
+    }
+
+    area_texto.value = pw
+    document.body.appendChild(area_texto)
+    area_texto.select()
+    document.execCommand('copy')
+    area_texto.remove()
+    window.alert('Senha copiada com sucesso!!!')
+})

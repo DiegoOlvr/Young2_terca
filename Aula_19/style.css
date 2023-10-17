@@ -76,3 +76,12 @@ body {
     padding: 10px;
 
 }
+
+
+input[type="checked"]:checked {
+    background-color: rgb(35, 230, 9);
+}
+
+/* input[type="checked"]{
+    
+} */
