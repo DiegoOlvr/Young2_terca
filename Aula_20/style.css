@@ -44,7 +44,7 @@ form {
 }
 
 .entrada:focus{
-    border: none;
+    border: solid 3px orange;
     outline: 0;
 }
 
