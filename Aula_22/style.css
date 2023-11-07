@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Sigmar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: rgb(46, 13, 117);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa {
+    background-color: black;
+    color: rgb(250, 242, 0);
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 350px;
+    height: 30px;
+    border: 1.5px solid rgb(205, 197, 50);
+}
+
+.pesquisa::placeholder {
+    color: rgb(250, 242, 0);
+    font-size: 14px;
+}
+
+.pesquisa:focus {
+    outline: none;
+    background-color: rgb(78, 78, 74);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filme {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: rgb(46, 13, 117);
+}
+
+.filme img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.filme .filme-info {
+    background-color: rgb(46, 13, 117);
+    color: rgb(211, 183, 24);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    letter-spacing: 1px;
+    align-items: center;
+    height: 100px;
+}
+
+.filme .filme-info span {
+    background-color: rgba(0, 0, 0, 0.845);
+    border-radius: 2px;
+    padding: 2.5px 5px;
+}
+
+.filme .filme-info span.green {
+    color: green;
+    font-weight: bold;
+}
+
+.filme .filme-info span.yellow {
+    color: rgb(157, 157, 16);
+    font-weight: bold;
+}
+
+.filme .filme-info span.red {
+    color: red;
+    font-weight: bold;
+}
