@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Sigmar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background-color: white;
+    border-radius: 1.5rem;
+
+    height: 60%;
+    width: 35%;
+
+}
+
+footer {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.304);
+    font-style: italic;
+    font-size: 1.4rem;
+    bottom: 3rem;   
+    padding: 0 2rem ;
+    color: white;
+    border-radius: 1.5rem;
+}
