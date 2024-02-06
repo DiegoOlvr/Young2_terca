@@ -19,28 +19,77 @@ html {
 }
 
 body {
-    font-size: 2.3rem;
-    background-color:  #0a112f;
+    font-size: 1.6rem;
+    /* background-color:  #0a112f; */
+}
+/* SESSÃO INTRODUÇÃO */
+
+#sessao {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.conteudo {
+    margin: 0rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: rgba(112, 107, 107, 0.144);
+    border-radius: 1rem;
+
+}
+
+.conteudo-esquerda {
+    width: 40%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-esquerda h1{
+    height: 20%;
+
+}
+
+.conteudo-direita {
+    width: 50%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-direita h1 {
+    height: 20%;
+}
+
+/* SESSÃO MATÉRIAS  */
+.materias-conteudo {
+    background-color: #0a112f;
+}
+
 .titulo-materias{
-    padding-bottom: 10rem;
     color: yellow;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-    counter-reset: grid-counter;
+
 }
 
 .title-materia{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding-right: 30rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    padding: 3rem;
 }
 
 .img{
@@ -54,28 +103,18 @@ body {
 
 .titulos{
     padding-bottom: 3rem;
-    flex-direction: row;
     color: yellow;
-    font-size: 2.5rem;
 }
 
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
-    counter-reset: grid-counter;
+    width: 70%;
+    padding: 3rem;
 }
 
-.materias-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 0, auto;
-    max-width: 100rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
+
 
 footer{
     color: rgb(6, 6, 6);
