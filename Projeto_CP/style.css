@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inconsolata&family=Montserrat&family=Poppins&family=Ubuntu&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2.3rem;
+    background-color:  #0a112f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-materias{
+    padding-bottom: 10rem;
+    color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    counter-reset: grid-counter;
+}
+
+.title-materia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 30rem;
+}
+
+.img{
+    width: 23rem;
+    height: 23rem;
+}
+
+.materias{
+    color: #ffffff;
+}
+
+.titulos{
+    padding-bottom: 3rem;
+    flex-direction: row;
+    color: yellow;
+    font-size: 2.5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    counter-reset: grid-counter;
+}
+
+.materias-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0, auto;
+    max-width: 100rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+footer{
+    color: rgb(6, 6, 6);
+    background-color: rgb(127, 125, 125);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 45%;
+    padding-left: 10px;
+}
+
+a:link{
+    text-decoration: none;
+    color: rgb(215, 252, 3);
+}
+
+.footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 3rem;
+}
